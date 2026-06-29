@@ -1,0 +1,102 @@
+
+.bd-toc nav ul li a {
+    color: var(--toc-link) !important;
+}
+
+/* Breite des Contents maximieren */
+.wy-nav-content {
+    max-width: 1200px !important;
+}
+
+/* Korrekturen für Akkordion-Einzüge */
+.sd-dropdown {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* Headerlinks ([#] Anker) */
+a.headerlink {
+    color: var(--anchor-color) !important;
+    margin-left: 10px !important;
+    text-decoration: none !important;
+}
+
+a.headerlink:hover {
+    color: var(--toc-hover) !important;
+}
+
+/* Table of Contents (Rechte Seite) */
+.bd-toc nav ul li a {
+    color: var(--toc-link) !important;
+}
+
+.bd-toc nav ul li a:hover {
+    color: var(--toc-hover) !important;
+    text-decoration: underline;
+}
+
+.bd-sidebar-primary .sidebar-primary-items__start {
+    font-family: 'TeXGyreHeros', sans-serif !important;
+}
+
+/* Alle Links in der Sidebar (Ebenen 1, 2, 3...) */
+.bd-sidebar-primary .nav.bd-links li a {
+    font-family: 'TeXGyreHeros', sans-serif !important;
+    font-weight: 500;
+    /* Medium für normale Links */
+    color: var(--sidebar-link) !important;
+}
+
+/* Aktiver Link und Hover-Zustand */
+.bd-sidebar-primary .nav.bd-links li.current>a,
+.bd-sidebar-primary .nav.bd-links li a:hover {
+    font-weight: 700;
+    /* Fett für aktive/gehoverte Links */
+    color: var(--sidebar-active) !important;
+}
+
+/* Die Sektions-Überschriften in der Sidebar (falls vorhanden) */
+.bd-sidebar-primary .sidebar-header,
+.bd-sidebar-primary .caption-text {
+    font-family: 'TeXGyreHeros', sans-serif !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+}
+
+/* --- Sekundäre Sidebar (Rechts: "On this page") --- */
+.bd-sidebar-secondary .sidebar-secondary-items,
+.bd-sidebar-secondary .toc-section-heading {
+    font-family: 'TeXGyreHeros', sans-serif !important;
+}
+
+/* Titel der rechten Sidebar (z.B. "Auf dieser Seite") */
+.bd-sidebar-secondary .toc-section-heading {
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    color: var(--sidebar-title) !important;
+    margin-bottom: 1rem;
+}
+
+/* Links in der rechten Sidebar */
+.nav.section-nav.flex-column li a {
+    font-family: 'TeXGyreHeros', sans-serif !important;
+    font-size: 0.9rem;
+    color: var(--sidebar-link) !important;
+    padding: 0.25rem 0;
+}
+
+/* Aktiver Zustand rechts (beim Scrollen / Spy) */
+.nav.section-nav.flex-column li.active>a {
+    font-weight: 700 !important;
+    color: var(--sidebar-active) !important;
+    border-left: 2px solid var(--sidebar-active);
+    padding-left: 10px;
+}
+
+.nav.section-nav.flex-column li a:hover {
+    color: var(--sidebar-link-hover) !important;
+}

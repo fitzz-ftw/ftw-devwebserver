@@ -1,0 +1,131 @@
+.nftt-navbar span.brand-text,
+.nftt-navbar span.brand-short-text {
+    font-weight: 900;
+    font-size: 35px;
+    /* content: "patch";
+    border: 2px solid white; */
+}
+
+.person {
+    font-variant: small-caps;
+    letter-spacing: 0.03em;
+    font-weight: 400;
+}
+
+/* Tabellen-Typografie: Condensed & Normales Gewicht */
+.list-table td,
+.list-table th {
+    font-family: "Fira Sans Condensed", "Fira Sans", sans-serif;
+}
+
+.list-table td {
+    font-weight: 400;
+    /* Stärker als das 300er Standard-Weight */
+}
+
+.list-table th {
+    font-weight: 700;
+    /* Deutlicher Header-Kontrast */
+}
+/* @import url("custom-mermaid.css"); */
+
+.class-tree-diagram figure,
+.class-tree-diagram {
+    /* height: 300px; */
+    width: 300px;
+}
+
+
+.class-tree-diagram figure .mermaid-container > pre > svg {
+    height: 300px;
+    width: 100%;
+}
+.field-list dd {
+    overflow-x: auto;
+}
+
+a>code {
+    color: var(--nftt-code-color);
+}
+
+:root {
+    --header-height: 60px;
+}
+
+@media (min-width: 576px){
+    :root {
+            --header-height: 60px;
+    }
+}
+
+@media (min-width: 768px) {
+    :root {
+        --header-height: 80px;
+    }
+}
+
+@media (min-width: 992px){
+    :root {
+            --header-height: 80px;
+    }
+}
+
+@media (min-width: 1200px){
+    :root {
+            --header-height: 80px;
+    }
+}
+
+html {
+    scroll-padding-top: var(--header-height);
+    scroll-behavior: smooth;
+}
+/* Standard für alle externen Links */
+a.external::after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: 4px;
+    background-image: url('external-link.svg');
+    /* Pfad zu deinem SVG */
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    opacity: 0.7;
+    transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s ease;
+}
+a.reference.external:hover::after {
+    opacity: 1.0;
+    /* scale: 2.0; */
+    transform: scale(2);
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.3));
+}
+
+.dark a.external::after {
+    filter: invert(1) brightness(2) !important;
+}
+
+#external-link-legend {
+    display: inline-flex;
+    align-items: baseline;
+    justify-content: center;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    border: 1px solid var(--nftt-foot2-link1);
+    color: var(--nftt-foot2-link1) !important;
+}
+
+#external-link-legend .legend-icon {
+    width: 12px;
+    margin-right: 8px;
+    vertical-align: baseline;
+    position: relative;
+    top: 1px;
+}
+
+/* --- Dark Mode für unsere ID (falls die Transparenz sich ändert) --- */
+.dark #external-link-legend .legend-icon{
+    filter: invert(1) brightness(2) !important;
+}

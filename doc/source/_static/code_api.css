@@ -1,0 +1,57 @@
+
+
+/* Code-Blöcke und Inline-Code */
+code,
+pre,
+kbd,
+samp {
+    font-family: 'TeXGyreCursor', monospace !important;
+    font-weight: 700 !important;
+}
+
+div.highlight pre {
+    line-height: 1.4;
+    padding: 1em;
+}
+
+/* API-Signaturen */
+dt.sig-object {
+    font-family: 'TeXGyreCursor', monospace !important;
+    font-weight: 700 !important;
+    font-size: 1.15rem;
+    border-bottom: 1px solid #eee;
+}
+
+dt.sig-object em.sig-param {
+    font-style: italic !important;
+    /* Nutzt Cursor-BoldItalic */
+}
+
+/* Signaturen: Button-Look entfernen & Kontrast */
+dl.py.method dt.sig,
+dl.py.property dt.sig,
+dl.py.class dt.sig {
+    background-color: transparent !important;
+    border: none !important;
+    color: var(--api-sig-color) !important;
+    font-family: 'TeXGyreCursor', monospace !important;
+    font-weight: 700 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+}
+
+
+/* Objekt-Name (z.B. die Methode selbst) in Dunkelblau */
+.sig-name.descname {
+    color: var(--api-name-color) !important;
+}
+
+
+/* Parameter (Bold-Italic) */
+.sig-param {
+    font-family: 'TeXGyreCursor', monospace !important;
+    font-weight: 700 !important;
+    font-style: italic !important;
+    color: var(--api-param-color) !important;
+}
+

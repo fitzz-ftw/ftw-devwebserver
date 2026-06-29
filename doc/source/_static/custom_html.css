@@ -1,0 +1,12 @@
+/* MASTER CSS - Sphinx Design System 
+   Reihenfolge ist wichtig für die Kaskade!
+*/
+
+@import url("fonts.css");        /* 1. Schriften laden */
+@import url("colors.css");
+@import url("typography.css");   /* 2. Grundtext (Pagella) */
+@import url("html_layout_fixes.css"); /* 3. Geometrie & TOC */
+@import url("ui_shared.css");  /* 4. UI & Akkordeons (Heros) */
+@import url("html_ui_elements.css");
+@import url("code_api.css");     /* 5. API & Signaturen (Cursor) */
+@import url("admonitions.css");  /* 6. Warnungen/Hinweise (LaTeX-Style) */

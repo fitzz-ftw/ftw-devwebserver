@@ -1,0 +1,15 @@
+/* Spezielle Web-Anpassungen für das Inhaltsverzeichnis */
+.toctree-wrapper p.caption {
+    font-size: 1.6rem !important;
+    margin-top: 2rem !important;
+    margin-bottom: 1rem !important;
+}
+
+/* Hover-Effekte und Schatten, die nur im Browser gut wirken */
+.sd-card {
+    transition: transform 0.2s ease-in-out;
+}
+.sd-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}

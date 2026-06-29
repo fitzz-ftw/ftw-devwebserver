@@ -1,0 +1,76 @@
+/* Styling for the container of each BDD step */
+.bdd-step {
+    /* border: 1px solid #e1e4e8; */
+    border-radius: 6px;
+    padding: 16px;
+    margin: 20px 0;
+    background-color: #f8f9fa;
+}
+
+/* Styling for the step label (e.g., 'Step 1') */
+/* .bdd-step-label {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #586069;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+} */
+.bdd-step-label {
+    font-weight: 500;
+    color: #586069;
+    margin-bottom: 0px;
+}
+/* Optional: Highlight the code block inside the step */
+.bdd-then .highlight-default.notranslate .highlight pre,
+.bdd-step .highlight-default.notranslate
+.highlight pre {
+    background-color: #ffffff;
+    border: 1px solid #dfe2e5;
+}
+
+/* Styling for BDD roles to make them stand out if needed */
+.bdd-given.bdd-directive::before {
+    content: "Given: ";
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.bdd-when.bdd-directive::before {
+    content: "When: ";
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.bdd-then.bdd-directive::before {
+    content: "Then: ";
+    font-weight: 500;
+    color: #2c3e50;
+}
+.bdd-then p,
+.bdd-when p,
+.bdd-given p{
+    padding-left: 20px;
+}
+
+.bdd-feature.bdd-directive::before  {
+    content: "Feature: ";
+    font-weight: 500;
+    position: relative;
+    top: 35px;
+}
+
+.bdd-feature p {
+    padding-left: 10px;
+}
+
+.bdd-scenario.bdd-directive::before {
+    content: "Scenario: ";
+    font-weight: 500;
+    position: relative;
+    top: 35px;
+}
+
+.bdd-scenario p {
+    padding-left: 10px;
+}

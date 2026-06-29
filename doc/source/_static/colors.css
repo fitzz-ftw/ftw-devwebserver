@@ -1,0 +1,135 @@
+/* SECTION - Colors typograpy */
+:root {
+    /* LIGHT TYPO */
+    --text-color: #1a1a1a;
+    --quote-color: #444444;
+    --quote-border: #cccccc;
+    --header-color: #000000;
+}
+
+[data-theme="dark"] {
+    /* DARK TYPO */
+    --text-color: #e0e0e0;
+    --quote-color: #bbbbbb;
+    --quote-border: #555555;
+    --header-color: #ffffff;
+}
+
+/* !SECTION - Colors typograpy */
+/* SECTION - Colors layout_fixes*/
+:root {
+    /* LIGHT LAYOUT */
+    --toc-link: #333333;
+    --toc-hover: #0056b3;
+    --anchor-color: #cccccc;
+    --sidebar-link: var(--toc-link);
+    --sidebar-link-hover: var(--toc-hover);
+    --sidebar-active: var(--toc-hover);
+}
+
+[data-theme="dark"] {
+    /* DARK LAYOUT */
+    --toc-link: #abb2bf;
+    --toc-hover: #61afef;
+    --anchor-color: #555555;
+    --sidebar-link: var(--toc-link);
+    --sidebar-link-hover: var(--toc-hover);
+    --sidebar-active: var(--toc-hover);
+}
+/* !SECTION - Colors layout_fixes */
+
+
+/* SECTION - Colors ui_elements */
+:root {
+    /* LIGHT UI */
+    --ui-header-text: var(--header-color);
+    /* Für Akkordion-Titel & Admonition-Titel */
+    --ui-body-text: #333333;
+    /* Für Rubriken */
+    --ui-label-color: var(--quote-color);
+    /* Für Feldlisten Labels */
+    --ui-patch-red: #c0392b;
+    --ui-patch-bg: #f9f9f9;
+    /* LIGHT FTW */
+    --fitzzftw-color-added: var(--iso-green);
+    --fitzzftw-color-changed: var(--toc-hover);
+    --fitzzftw-color-fixed: var(--iso-red);
+    --fitzzftw-title-underline: var(--toc-hover);
+}
+
+[data-theme="dark"] {
+    /* DARK UI */
+    --ui-header-text: var(--header-color);
+    --ui-body-text: #e0e0e0;
+    --ui-label-color: var(--quote-color);
+    --ui-patch-red: #ff6b6b;
+    --ui-patch-bg: #2d2d2d;
+    /* DARK FTW */
+    --fitzzftw-title-underline: var(--toc-hover);
+}
+/* !SECTION - Colors ui_elements */
+
+
+/* SECTION - Colors code_api */
+:root {
+    /* LIGHT API */
+    --api-sig-color: var(--header-color);
+    --api-name-color: var(--toc-hover);
+    --api-param-color: var(--quote-color);
+    --api-bg-inline: var(--ui-patch-bg);
+}
+
+[data-theme="dark"] {
+    /* DARK API */
+    --api-sig-color: var(--header-color);
+    --api-name-color: var(--toc-hover);
+    --api-param-color: var(--toc-link);
+    --api-bg-inline: var(--ui-patch-bg);
+}
+/* !SECTION - Colors code_api */
+
+/* SECTION - Colors admonitions */
+:root {
+    /* --- LIGHT MODE VARIABLEN (ISO 7010 RAL) --- */
+    --iso-red: #9C2424;
+    --iso-yellow: #FAA900;
+    --iso-blue: #005487;
+    --iso-green: #248052;
+
+    /* Hintergrundfarben Light */
+    --bg-note: #f0f7fb;
+    --bg-warning: #fffcf0;
+    --bg-danger: #fdf2f2;
+    --bg-hint: #f2f9f5;
+
+    /* Titelfarben Light */
+    --title-note: #d9eaf5;
+    --title-warning: #fef2c7;
+    --title-danger: #f9d7d7;
+    --title-hint: #d7ede1;
+}
+
+[data-theme="dark"] {
+    /* --- DARK MODE VARIABLEN --- */
+    --iso-red: #ff6b6b;
+    /* Helleres Rot für Kontrast */
+    --iso-yellow: #ffcc00;
+    /* Leuchtendes Gelb */
+    --iso-blue: #4ea8de;
+    /* Hellblau */
+    --iso-green: #58d68d;
+    /* Pastellgrün */
+
+    /* Hintergrundfarben Dark */
+    --bg-note: #0a1926;
+    --bg-warning: #241f0a;
+    --bg-danger: #260a0a;
+    --bg-hint: #0a2617;
+
+    /* Titelfarben Dark */
+    --title-note: #102a42;
+    --title-warning: #3d3401;
+    --title-danger: #421010;
+    --title-hint: #104226;
+}
+/* !SECTION - Colors admonitions */

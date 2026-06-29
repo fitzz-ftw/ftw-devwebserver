@@ -1,0 +1,326 @@
+/*SECTION Fira Sans Compressed Roman - Master Stylesheet mit präzisen Weight-Mappings */
+
+/* TWO (CSS 100) */
+@font-face {
+    font-family: 'Fira Sans Compressed';
+    src: url('FiraSansCompressed-Two.woff2') format('woff2'),
+        url('FiraSansCompressed-Two.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* FOUR (CSS 110 - Hilfswert für Sortierung) */
+@font-face {
+    font-family: 'Fira Sans Compressed';
+    src: url('FiraSansCompressed-Four.woff2') format('woff2'),
+        url('FiraSansCompressed-Four.woff') format('woff');
+    font-weight: 110;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* SIX (CSS 120) */
+@font-face {
+    font-family: 'Fira Sans Compressed';
+    src: url('FiraSansCompressed-Six.woff2') format('woff2'),
+        url('FiraSansCompressed-Six.woff') format('woff');
+    font-weight: 120;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* EIGHT (CSS 130) */
+@font-face {
+    font-family: 'Fira Sans Compressed';
+    src: url('FiraSansCompressed-Eight.woff2') format('woff2'),
+        url('FiraSansCompressed-Eight.woff') format('woff');
+    font-weight: 130;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* HAIR (CSS 140) */
+@font-face {
+    font-family: 'Fira Sans Compressed';
+    src: url('FiraSansCompressed-Hair.woff2') format('woff2'),
+        url('FiraSansCompressed-Hair.woff') format('woff');
+    font-weight: 140;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* THIN (CSS 150) */
+@font-face {
+    font-family: 'Fira Sans Compressed';
+    src: url('FiraSansCompressed-Thin.woff2') format('woff2'),
+        url('FiraSansCompressed-Thin.woff') format('woff');
+    font-weight: 150;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ULTRALIGHT (CSS 200) */
+@font-face {
+    font-family: 'Fira Sans Compressed';
+    src: url('FiraSansCompressed-UltraLight.woff2') format('woff2'),
+        url('FiraSansCompressed-UltraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* EXTRALIGHT (CSS 250) */
+@font-face {
+    font-family: 'Fira Sans Compressed';
+    src: url('FiraSansCompressed-ExtraLight.woff2') format('woff2'),
+        url('FiraSansCompressed-ExtraLight.woff') format('woff');
+    font-weight: 250;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* LIGHT (CSS 300) */
+@font-face {
+    font-family: 'Fira Sans Compressed';
+    src: url('FiraSansCompressed-Light.woff2') format('woff2'),
+        url('FiraSansCompressed-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* BOOK (CSS 350) */
+@font-face {
+    font-family: 'Fira Sans Compressed';
+    src: url('FiraSansCompressed-Book.woff2') format('woff2'),
+        url('FiraSansCompressed-Book.woff') format('woff');
+    font-weight: 350;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* REGULAR (CSS 400) */
+@font-face {
+    font-family: 'Fira Sans Compressed';
+    src: url('FiraSansCompressed-Regular.woff2') format('woff2'),
+        url('FiraSansCompressed-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* MEDIUM (CSS 500) */
+@font-face {
+    font-family: 'Fira Sans Compressed';
+    src: url('FiraSansCompressed-Medium.woff2') format('woff2'),
+        url('FiraSansCompressed-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* SEMIBOLD (CSS 600) */
+@font-face {
+    font-family: 'Fira Sans Compressed';
+    src: url('FiraSansCompressed-SemiBold.woff2') format('woff2'),
+        url('FiraSansCompressed-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* BOLD (CSS 700) */
+@font-face {
+    font-family: 'Fira Sans Compressed';
+    src: url('FiraSansCompressed-Bold.woff2') format('woff2'),
+        url('FiraSansCompressed-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* EXTRABOLD (CSS 800) */
+@font-face {
+    font-family: 'Fira Sans Compressed';
+    src: url('FiraSansCompressed-ExtraBold.woff2') format('woff2'),
+        url('FiraSansCompressed-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* HEAVY (CSS 900) */
+@font-face {
+    font-family: 'Fira Sans Compressed';
+    src: url('FiraSansCompressed-Heavy.woff2') format('woff2'),
+        url('FiraSansCompressed-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+/*!SECTION */
+
+/*SECTION Fira Sans Compressed Italic - Master Stylesheet mit präzisen Weight-Mappings */
+
+/* TWO (CSS 100) */
+@font-face {
+    font-family: 'Fira Sans Compressed';
+    src: url('FiraSansCompressed-TwoItalic.woff2') format('woff2'),
+        url('FiraSansCompressed-TwoItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* FOUR (CSS 110 - Hilfswert für Sortierung) */
+@font-face {
+    font-family: 'Fira Sans Compressed';
+    src: url('FiraSansCompressed-FourItalic.woff2') format('woff2'),
+        url('FiraSansCompressed-FourItalic.woff') format('woff');
+    font-weight: 110;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* SIX (CSS 120) */
+@font-face {
+    font-family: 'Fira Sans Compressed';
+    src: url('FiraSansCompressed-SixItalic.woff2') format('woff2'),
+        url('FiraSansCompressed-SixItalic.woff') format('woff');
+    font-weight: 120;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* EIGHT (CSS 130) */
+@font-face {
+    font-family: 'Fira Sans Compressed';
+    src: url('FiraSansCompressed-EightItalic.woff2') format('woff2'),
+        url('FiraSansCompressed-EightItalic.woff') format('woff');
+    font-weight: 130;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* HAIR (CSS 140) */
+@font-face {
+    font-family: 'Fira Sans Compressed';
+    src: url('FiraSansCompressed-HairItalic.woff2') format('woff2'),
+        url('FiraSansCompressed-HairItalic.woff') format('woff');
+    font-weight: 140;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* THIN (CSS 150) */
+@font-face {
+    font-family: 'Fira Sans Compressed';
+    src: url('FiraSansCompressed-ThinItalic.woff2') format('woff2'),
+        url('FiraSansCompressed-ThinItalic.woff') format('woff');
+    font-weight: 150;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* ULTRALIGHT (CSS 200) */
+@font-face {
+    font-family: 'Fira Sans Compressed';
+    src: url('FiraSansCompressed-UltraLightItalic.woff2') format('woff2'),
+        url('FiraSansCompressed-UltraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* EXTRALIGHT (CSS 250) */
+@font-face {
+    font-family: 'Fira Sans Compressed';
+    src: url('FiraSansCompressed-ExtraLightItalic.woff2') format('woff2'),
+        url('FiraSansCompressed-ExtraLightItalic.woff') format('woff');
+    font-weight: 250;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* LIGHT (CSS 300) */
+@font-face {
+    font-family: 'Fira Sans Compressed';
+    src: url('FiraSansCompressed-LightItalic.woff2') format('woff2'),
+        url('FiraSansCompressed-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* BOOK (CSS 350) */
+@font-face {
+    font-family: 'Fira Sans Compressed';
+    src: url('FiraSansCompressed-BookItalic.woff2') format('woff2'),
+        url('FiraSansCompressed-BookItalic.woff') format('woff');
+    font-weight: 350;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* REGULAR (CSS 400) */
+@font-face {
+    font-family: 'Fira Sans Compressed';
+    src: url('FiraSansCompressed-Italic.woff2') format('woff2'),
+        url('FiraSansCompressed-Italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* MEDIUM (CSS 500) */
+@font-face {
+    font-family: 'Fira Sans Compressed';
+    src: url('FiraSansCompressed-MediumItalic.woff2') format('woff2'),
+        url('FiraSansCompressed-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* SEMIBOLD (CSS 600) */
+@font-face {
+    font-family: 'Fira Sans Compressed';
+    src: url('FiraSansCompressed-SemiBoldItalic.woff2') format('woff2'),
+        url('FiraSansCompressed-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* BOLD (CSS 700) */
+@font-face {
+    font-family: 'Fira Sans Compressed';
+    src: url('FiraSansCompressed-BoldItalic.woff2') format('woff2'),
+        url('FiraSansCompressed-BoldItalic.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* EXTRABOLD (CSS 800) */
+@font-face {
+    font-family: 'Fira Sans Compressed';
+    src: url('FiraSansCompressed-ExtraBoldItalic.woff2') format('woff2'),
+        url('FiraSansCompressed-ExtraBoldItalic.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* HEAVY (CSS 900) */
+@font-face {
+    font-family: 'Fira Sans Compressed';
+    src: url('FiraSansCompressed-HeavyItalic.woff2') format('woff2'),
+        url('FiraSansCompressed-HeavyItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+/*!SECTION */
+

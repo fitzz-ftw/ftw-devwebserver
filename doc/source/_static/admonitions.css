@@ -1,0 +1,49 @@
+
+/* --- Grundstruktur (Nutzt nur noch Variablen) --- */
+.admonition {
+    border: none !important;
+    border-left: 6px solid var(--iso-color) !important;
+    border-radius: 4px;
+    margin: 1.5em 0;
+    background-color: var(--iso-bg) !important;
+}
+
+.admonition-title {
+    font-family: 'TeXGyreHeros', sans-serif !important;
+    font-weight: 700 !important;
+    background-color: var(--iso-title-bg) !important;
+    color: var(--iso-color) !important;
+    padding: .4rem .6rem .4rem 2rem !important;
+}
+
+/* --- Zuweisung der Logik --- */
+
+/* Note (Blau) */
+.admonition.note {
+    --iso-color: var(--iso-blue);
+    --iso-bg: var(--bg-note);
+    --iso-title-bg: var(--title-note);
+}
+
+/* Warning (Gelb) */
+.admonition.warning {
+    --iso-color: var(--iso-yellow);
+    --iso-bg: var(--bg-warning);
+    --iso-title-bg: var(--title-warning);
+}
+
+/* Danger / Error (Rot) */
+.admonition.danger,
+.admonition.error {
+    --iso-color: var(--iso-red);
+    --iso-bg: var(--bg-danger);
+    --iso-title-bg: var(--title-danger);
+}
+
+/* Hint / Tip (Grün) */
+.admonition.hint,
+.admonition.important {
+    --iso-color: var(--iso-green);
+    --iso-bg: var(--bg-hint);
+    --iso-title-bg: var(--title-hint);
+}

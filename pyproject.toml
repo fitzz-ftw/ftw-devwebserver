@@ -1,0 +1,131 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=61.0", "setuptools-scm>=8.0"]
+
+[tool.setuptools]
+include-package-data = true
+[tool.setuptools.package-dir]
+"" = "src"
+[tool.setuptools.packages.find]
+include = ["fitzzftw*",]
+namespaces = true
+where = ["src"]
+
+[tool.setuptools_scm]
+tag_regex = '^(?P<prefix>v)?(?P<version>[^\+|-]+)(?P<suffix>-test)?$'
+write_to = "src/fitzzftw/devwebserver/_version.py"
+
+[project]
+name = "ftw-devwebserver"
+dynamic = ["version"]
+description = ""
+readme = "README.md"
+requires-python = ">=3.14"
+license = "LGPL-2.1-or-later"
+authors = [
+    {name = "Fitzz TeXnik Welt", email = "FitzzTeXnikWelt@t-online.de"}
+]
+maintainers = [
+    {name = "Fitzz TeXnik Welt", email = "FitzzTeXnikWelt@t-online.de"}
+]
+keywords = []
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: 3.15",
+    "Topic :: Development",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/fitzz-ftw/ftw-devwebserver"
+Documentation = "https://ftw-devwebserver.readthedocs.io/"
+Repository = "https://github.com/fitzz-ftw/ftw-devwebserver.git"
+Issues = "https://github.com/fitzz-ftw/ftw-devwebserver/issues"
+Changelog = "https://github.com/fitzz-ftw/ftw-devwebserver/blob/main/CHANGELOG.md"
+
+[project.scripts]
+ftwchangelog = "fitzzftw.devwebserver.git_shortcuts.programms:prog_ftwchangelog"
+
+[project.optional-dependencies]
+doc = [
+  "sphinx < 9.0.0",
+  "myst-parser",
+  "sphinx-argparse",
+  "autoclasstoc",
+  "sphinx-nefertiti",
+  "sphinx-copybutton",
+  "sphinx-design",
+  "sphinx-mdinclude",
+  "sphinxcontrib-mermaid",
+]
+
+dev = ["ftw-devwebserver[test,doc,lint]", "esbonio==0.16.5"]
+lint = ["ruff"]
+test = ["pytest", "pytest-mock", "pytest-cov"]
+
+
+[tool.distutils.egg_info]
+egg_base = "."
+
+[tool.ruff]
+exclude = ["pyproject.toml"]
+line-length = 100
+src = ["src"]
+
+[tool.ruff.lint]
+# E/W = Pycodestyle (Standard-Fehler/Warnungen)
+# F = Pyflakes (Logik-Fehler wie ungenutzte Imports)
+# I = isort (Sortierung der Imports)
+# B = flake8-bugbear (findet potenzielle Design-Fehler)
+ignore = ["W293", "W291", "B904"]
+select = ["E", "W", "F", "I", "B"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["fitzzftw"]
+
+[tool.ruff.format]
+indent-style = "space"
+quote-style = "double"
+
+[tool.pytest.ini_options]
+# Pytest-Optionen für die Testausführung
+addopts = [
+  "--doctest-glob=get_started_*.*.rst",
+  "--cov-report=term",
+  "--cov-report=html",
+]
+minversion = "7.0"
+testpaths = [
+  "doc/source/devel", # Durchsucht Ihr Dokumentationsverzeichnis nach .rst-Dateien
+  "tests", # Durchsucht das Unit-Test-Verzeichnis (für test_*.py)
+]
+
+[tool.coverage.run]
+branch = true
+omit = [
+  "**/_version.py",
+]
+
+source = ["fitzzftw.devwebserver"]
+
+[tool.coverage.report]
+exclude_also = [
+  "if *__name__ *=*[\"']__main__.*",
+  "# for future use",
+  "# not Windows testable",
+]
+fail_under = 100
+show_missing = true
+#format = "text"
+#
+[tool.coverage.html]
+# Das entspricht --cov-report=html:doc/build/coverage
+directory = "doc/build/test_coverage/devwebserver"
+
+[tool.esbonio.sphinx]
+buildCommand = ["sphinx-build", "-M", "dirhtml", "doc/source", "./_build"]
+pythonCommand = ["${venv:../.venv311/}"]

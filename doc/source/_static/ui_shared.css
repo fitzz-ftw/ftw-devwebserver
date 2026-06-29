@@ -1,0 +1,34 @@
+/* Schriftarten für alle UI-Titel */
+.sd-accordion-title,
+.sd-summary-title,
+details summary,
+p.rubric,
+.sd-card-title,
+div.code-block-caption span.caption-text,
+.toctree-wrapper p.caption,
+dl.simple dt strong,
+.fitzzftw-cr-title {
+    font-family: 'TeXGyreHeros', sans-serif !important;
+    font-weight: 700 !important;
+    color: var(--ui-header-text) !important;
+}
+
+/* Changelog-Kategorien (Logik aus deinem Snippet) */
+.fitzzftw-cr-added, .fitzzftw-cr-changed, .fitzzftw-cr-fixed {
+    font-family: 'TeXGyreHeros', sans-serif !important;
+    font-weight: 500 !important;
+}
+p.fitzzftw-cr-added.rubric { color: var(--fitzzftw-color-added) !important; font-size: 0.8rem !important; }
+p.fitzzftw-cr-changed.rubric { color: var(--fitzzftw-color-changed) !important; font-size: 0.8rem !important; }
+p.fitzzftw-cr-fixed.rubric { color: var(--fitzzftw-color-fixed) !important; font-size: 0.8rem !important; }
+
+/* Die Titel-Box im Changelog */
+.fitzzftw-cr-title {
+    font-weight: 800;
+    font-size: 1.3rem !important;
+    border-bottom: 2px solid var(--ui-active-color);
+    display: inline-block;
+    padding-bottom: 2px;
+    margin-bottom: 1.2rem !important;
+}
+

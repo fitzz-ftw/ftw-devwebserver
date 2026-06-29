@@ -1,0 +1,55 @@
+
+body {
+    font-family: 'TeXGyrePagella', serif !important;
+    color: var(--text-color) !important;
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'TeXGyreHeros', sans-serif !important;
+    font-weight: 700 !important;
+    /* Farbanpassung erfolgt über Variablen */
+    color: var(--header-color);
+}
+
+p {
+    margin-bottom: 1.2em;
+}
+
+
+/* Zitat-Styling (Tufte-Style mit echter Pagella) */
+blockquote,
+blockquote.pull-quote {
+    /* Nutzt jetzt die echte Italic-Datei aus deinem Register */
+    font-family: 'TeXGyrePagella', serif !important;
+    font-style: italic !important;
+    font-weight: 400;
+    /* Regular Italic wirkt bei Pagella edler als Fett-Kursiv */
+
+    /* Deine bewährten Maße aus der alten CSS */
+    border-left: 3px solid var(--quote-border) !important;
+    padding: 1rem 2rem !important;
+    margin: 2rem 0 !important;
+    color: var(--quote-color) !important;
+
+    /* Die Hardware-Beschleunigung für scharfe Serifen-Kanten */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Optischer Ausgleich: Pagella läuft etwas breiter als Standard-Serifen */
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+}
+
+/* Falls im Zitat Code vorkommt, soll dieser fett bleiben */
+blockquote code {
+    font-style: normal !important;
+    font-weight: 700 !important;
+}

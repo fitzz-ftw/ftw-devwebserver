@@ -1,0 +1,82 @@
+/* --- PAGELLA --- */
+@import url(fonts/texgyrepagella/stylestyle.css);
+/* @font-face {
+    font-family: 'TeXGyrePagella';
+    src: url('fonts/texgyrepagella-regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TeXGyrePagella';
+    src: url('fonts/texgyrepagella-bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TeXGyrePagella';
+    src: url('fonts/texgyrepagella-italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TeXGyrePagella';
+    src: url('fonts/texgyrepagella-bolditalic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+} */
+
+/* --- HEROS --- */
+@import url(fonts/texgyreheros/stylesheet.css);
+/* @font-face {
+    font-family: 'TeXGyreHeros';
+    src: url('fonts/texgyreheros-regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TeXGyreHeros';
+    src: url('fonts/texgyreheros-bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TeXGyreHeros';
+    src: url('fonts/texgyreheros-italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+} */
+
+/* --- CURSOR --- */
+@import url(fonts/texgyrecursor/stylesheet.css);
+/* @font-face {
+    font-family: 'TeXGyreCursor';
+    src: url('fonts/texgyrecursor-regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TeXGyreCursor';
+    src: url('fonts/texgyrecursor-bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TeXGyreCursor';
+    src: url('fonts/texgyrecursor-italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TeXGyreCursor';
+    src: url('fonts/texgyrecursor-bolditalic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+} */

@@ -1,0 +1,64 @@
+venv
+.venv*
+
+*.egg-info
+.pytest_cache
+__pycache__
+
+.mypy_cache
+
+# Sphinx generated files
+doc/build
+doc/build_old_theme
+.coverage
+doc/source/_static/cover.svg
+doc/builxml
+
+#local copies
+* copy.css
+doc/new
+doc/old
+doc/orig
+piplist*.txt
+
+# Doctest generated files
+doc/source/devel/testhome/.config
+doc/source/devel/testhome/.cache
+doc/source/devel/testhome/.local
+doc/source/devel/testhome/testoutput/*
+
+
+
+# Build generated files
+dist
+build
+
+# Setuptools.scm generated file
+_version.py
+
+# Autosummary generated files
+doc/source/devel/api/
+
+# Backuped Files
+*.bak
+
+# Tox Generated Files
+.tox
+
+TAGMESSAGE.txt
+MERGEMESSAGE.txt
+old_messages/**
+doc/build_old_theme/coverage/python.txt
+
+# Old Code Snippets
+old_code_snippets
+git_dif*
+
+#Esbonio
+_build
+gitdiff*.txt
+git-diff*.txt
+git-log*.txt
+doc/TODO_baselibs.md
+doc/TODO.TXT
+coverage_script.py

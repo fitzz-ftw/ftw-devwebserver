@@ -1,0 +1,24 @@
+/* Fallback für E-Reader: Akkordeons immer ausgeklappt zeigen */
+details[sm-link] summary {
+    cursor: default;
+    list-style: none;
+}
+
+/* Entfernt den Pfeil im ePub, da man oft nicht klicken kann */
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Erzwingt Sichtbarkeit des Inhalts, falls der Reader das Attribut 'open' ignoriert */
+details > div, details > p {
+    display: block !important;
+    border-left: 2px solid var(--ui-active-color);
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+/* Karten im ePub untereinander statt nebeneinander (besser für schmale Screens) */
+.sd-card {
+    width: 100% !important;
+    margin-bottom: 1rem !important;
+}

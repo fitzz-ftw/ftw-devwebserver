@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'TeXGyreHeros';
+    src: url('./texgyreheros-regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TeXGyreHeros';
+    src: url('./texgyreheros-bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TeXGyreHeros';
+    src: url('./texgyreheros-italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
