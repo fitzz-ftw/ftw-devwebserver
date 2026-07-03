@@ -8,13 +8,15 @@ ftw-devwebserver: The Webserver for Deveolpment
 Core Pillars:
 -------------
 
+This is a Test.
 
+Das ist ein test.
 
 .. toctree::
    :maxdepth: 2
    :caption: User Manuals
 
-   user/cli_parser
+   user/prog_cli
 
 .. toctree::
    :maxdepth: 2

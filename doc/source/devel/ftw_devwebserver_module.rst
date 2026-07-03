@@ -6,4 +6,10 @@ FTW's Webserver for Developers
 .. autosummary::
     :toctree: api
     :recursive:
-    :template: module_extended.rst
+
+    fitzzftw.devwebserver.server
+    fitzzftw.devwebserver.watcher
+    fitzzftw.devwebserver.cli_parser
+    fitzzftw.devwebserver.communication
+    fitzzftw.devwebserver.config
+    fitzzftw.devwebserver.programs

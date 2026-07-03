@@ -1,0 +1,19 @@
+[devweb]
+[devweb.host]
+en ="Ipaddress of the webserver. (Default: %(default)s)"
+[devweb.port]
+en ="The port of the webserver. (Default: %(default)s)"
+[devweb.root_dir]
+en ="The base directory from which the web server serves files. (Default: %(default)s)"
+[devweb.watch_dirs]
+en ="List of directories to monitor for file changes to trigger auto-reloads. (Default: %(default)s)"
+[devweb.ignore_patterns]
+en ="!!!Not implemented yet!!! Glob patterns for files or directories to exclude from the file watcher. (Default: %(default)s)"
+[devweb.enabled]
+en ="!!!Not implemented yet!!! Enable HTTPS mode using provided certificate and key. (Default: %(default)s)"
+[devweb.cert_file]
+en ="!!!Not implemented yet!!! Path to the SSL/TLS certificate file for HTTPS support. (Default: %(default)s)"
+[devweb.key_file]
+en ="!!!Not implemented yet!!! Path to the private key file corresponding to the SSL/TLS certificate. (Default: %(default)s)"
+[devweb.reload_delay]
+en ="Time in milliseconds to wait after triggering a reload before triggering a reload again. (Default: %(default)s ms)"

@@ -11,7 +11,7 @@ from docutils.nodes import Node
 from docutils.parsers.rst import directives
 from docutils.parsers.rst.directives.misc import Include, adapt_path
 from jinja2 import Environment, FileSystemLoader
-from sphinx.transforms import SphinxTransform
+from sphinx.transforms import SphinxTransform  # type: ignore
 
 ext_dir = str(Path().cwd() / "ext")
 sys.path.insert(0, ext_dir)
@@ -22,6 +22,8 @@ from bddsphinx import (  # type: ignore # noqa: E402
     StepDirective,
     bdd_role,
 )
+
+autodoc_mock_imports = ["microdot", "watchdog"]
 
 # Read the Docs liefert uns die Canonical URL direkt!
 html_baseurl = os.environ.get("READTHEDOCS_CANONICAL_URL", "")
@@ -307,7 +309,8 @@ toc_object_entries_show_parents = "hide"
 # -- Options for Intersphinx
 intersphinx_mapping = {
     "python": (f"https://docs.python.org/{sys.version_info.major}.{sys.version_info.minor}", None),
-    "platformdirs": ("https://platformdirs.readthedocs.io/en/latest/", None),
+    "microdot": ("https://microdot.readthedocs.io/en/latest/", None),
+    "watchdog": ("https://python-watchdog.readthedocs.io/en/stable/", None),
 }
 
 # SECTION - Options for ePub output -------------------------------------------------
@@ -386,16 +389,23 @@ autodoc_default_options = {
 
 
 # SECTION - Function for Autosummary
+
+debug_log = Path(
+    "/python_devel/anaconda_neu/home_dev/Projekte/ftw-pki/ftw-devwebserver/debug-mermaid.log"
+).open("w")
+
 def create_mermaid_decision_maker(
-    whitelist: list[str] | None = None, blacklist: list[str] | None = None
+    whitelist: list[str] | None = None, blacklist: list[str] | None = None, debug_log_file=debug_log
 ) -> Callable[..., bool]:
     whitelist = whitelist or []
     blacklist = blacklist or []
-
+    debug_log.write("Create desicion function!\n")
     def should_render_mermaid(fullname):
         # 1. FAST RETURN: Blacklist (Geringste Kosten)
         # Wenn wir es explicit verboten haben, sofort raus.
-        if fullname in blacklist:
+        # print(fullname, flush=True)
+        debug_log_file.write(f"Fullname: {fullname}\n")
+        if fullname in blacklist or "{{" in fullname:
             return False
 
         # 2. FAST RETURN: Whitelist (Geringe Kosten)
@@ -419,7 +429,7 @@ def create_mermaid_decision_maker(
                 return any(b.__name__ != "object" for b in obj.__bases__)
 
             return False
-        except ImportError, AttributeError, ValueError:
+        except (ImportError, AttributeError, ValueError):
             return False
 
     return should_render_mermaid
@@ -435,7 +445,14 @@ autosummary_ignore_module_all = True
 autosummary_context = {}
 
 inherit_diagramm: list[str] = []
-exclude_inherit_diagramm: list[str] = []
+exclude_inherit_diagramm: list[str] = [
+    "fitzzftw.devwebserver.server",
+    "fitzzftw.devwebserver.watcher",
+    "fitzzftw.devwebserver.config",
+    "fitzzftw.devwebserver.communication",
+    "fitzzftw.devwebserver.cli_parser",
+    "fitzzftw.devwebserver.programs",
+    ]
 
 class_extention_context = {
     "class_inc": "classinc",

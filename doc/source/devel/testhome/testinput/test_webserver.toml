@@ -1,0 +1,29 @@
+# Konfiguration für den DevServer
+# Dies ist die Single Source of Truth für das Verhalten des Servers.
+
+[tool.devserver]
+# --- Netzwerk Konfiguration ---
+host = "0.0.0.0"       # 0.0.0.0 für lokales Netzwerk-Testing
+port = 8080            # Port für den Dev-Server
+
+# --- Pfad & Überwachungs Konfiguration ---
+root_dir = "docs/_build/html"      # Das Verzeichnis, das ausgeliefert wird
+watch_dirs = ["docs/source"]       # Quellverzeichnisse, die auf Änderungen prüfen
+ignore_patterns = [                # Strenge Ausschlussregeln gegen unnötige Reloads
+    ".git/*",
+    "**/__pycache__/*",
+    "**/.DS_Store",
+    "**/*.tmp"
+]
+
+# --- Build Integration (Optional) ---
+# Wenn definiert, führt das Tool dies bei Änderung aus, bevor der Reload kommt.
+# build_command = "make html" 
+
+# --- SSL / HTTPS Konfiguration (Zwingend für PWA) ---
+enabled = true
+cert_file = ".certs/server.crt"    # Pfad relativ zum Projekt-Root
+key_file = ".certs/server.key"     # Pfad relativ zum Projekt-Root
+
+# --- Verhalten ---
+reload_delay = 500                 # Verzögerung in Millisekunden (optional)

@@ -38,7 +38,10 @@ classifiers = [
     "Programming Language :: Python :: 3.15",
     "Topic :: Development",
 ]
-dependencies = []
+
+dependencies = ["watchdog>=5.0.0",
+"microdot>= 2.0.0"]
+
 
 [project.urls]
 Homepage = "https://github.com/fitzz-ftw/ftw-devwebserver"
@@ -48,7 +51,7 @@ Issues = "https://github.com/fitzz-ftw/ftw-devwebserver/issues"
 Changelog = "https://github.com/fitzz-ftw/ftw-devwebserver/blob/main/CHANGELOG.md"
 
 [project.scripts]
-ftwchangelog = "fitzzftw.devwebserver.git_shortcuts.programms:prog_ftwchangelog"
+ftwwebserver = "fitzzftw.devwebserver.programs:prog_devwebserver"
 
 [project.optional-dependencies]
 doc = [
@@ -65,7 +68,7 @@ doc = [
 
 dev = ["ftw-devwebserver[test,doc,lint]", "esbonio==0.16.5"]
 lint = ["ruff"]
-test = ["pytest", "pytest-mock", "pytest-cov"]
+test = ["pytest", "pytest-mock", "pytest-cov", "ftw-devtools"]
 
 
 [tool.distutils.egg_info]
@@ -94,7 +97,7 @@ quote-style = "double"
 [tool.pytest.ini_options]
 # Pytest-Optionen für die Testausführung
 addopts = [
-  "--doctest-glob=get_started_*.*.rst",
+  "--doctest-glob=get_started_*.rst",
   "--cov-report=term",
   "--cov-report=html",
 ]
