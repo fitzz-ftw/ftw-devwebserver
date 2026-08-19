@@ -1,0 +1,35 @@
+{
+  "name": "simplecomponents",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "vitest --config config/vite.config.js",
+    "lint": "eslint --config config/.eslintrc.js src/**/*.js",
+    "format": "prettier --config config/prettier.config.js --write src/**/*.js",
+    "docs": "jsdoc -c jsdoc.json"
+  },
+  "keywords": [],
+  "author": "Fitzz TeXnik Welt <FitzzTeXnikWelt@t-online.de>",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.1",
+    "better-docs": "^2.7.3",
+    "jsdoc": "^4.0.5",
+    "jsdom": "^29.1.1",
+    "vite": "^8.2.1",
+    "vitest": "^4.1.11"
+  },
+  "devserver": {
+    "port": 3000,
+    "host": "localhost",
+    "root_dir": "src/",
+    "watch_dirs": [
+      "src/components",
+      "src/css"
+    ],
+    "reload_delay": 500
+  }
+}

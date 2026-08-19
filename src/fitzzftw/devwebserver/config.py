@@ -70,11 +70,10 @@ class JsonSerializer(Serializer):
         :param bytes|str|Path content: The JSON content to deserialize.
         :returns: A dictionary representing the deserialized JSON data.
         """
-        match type(content):
-            case  Path() :
+        if isinstance(content,Path):
                 content =content.read_text()
-            case bytes() :
-                content = content.encode(errors="replace")
+        elif isinstance(content, bytes):
+                content = content.decode(errors="replace")
         return json.loads(str(content))
 
 class TomlSerializer(Serializer):

@@ -431,7 +431,7 @@ class DevWebserverArguments(BaseArguments):
         },
         "reload_delay": {
             "flags": ["--reload-delay"],
-            "kws": {},
+            "kws": {"default": 500},
             "pre": {},
         },
         "ignore_patterns": {
