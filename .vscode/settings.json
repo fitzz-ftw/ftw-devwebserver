@@ -5,11 +5,5 @@
             "envManager": "ms-python.python:venv",
             "packageManager": "ms-python.python:pip"
         },
-        {
-            "path": "testvscode.py",
-            "envManager": "ms-python.python:venv",
-            "packageManager": "ms-python.python:pip",
-            "workspace": "real-ftw-pki-tests"
-        }
     ]
 }
